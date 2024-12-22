@@ -5,7 +5,22 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+document.addEventListener('DOMContentLoaded', () => {
+  const mainContent = document.getElementById('main-content');
+  fetch('landing.html')
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.text();
+      })
+      .then(html => {
+          mainContent.innerHTML = html;
+      })
+      .catch(error => {
+          console.error('There was a problem with the fetch operation:', error);
+      });
+});
 
 (function() {
   "use strict";
