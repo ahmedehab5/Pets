@@ -5,6 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 document.addEventListener('DOMContentLoaded', () => {
   const mainContent = document.getElementById('main-content');
   fetch('landing.html')
@@ -21,6 +22,53 @@ document.addEventListener('DOMContentLoaded', () => {
           console.error('There was a problem with the fetch operation:', error);
       });
 });
+
+//On click Function To Load My Products
+function loadAllProducts() {
+    const mainContent = document.getElementById('main-content');
+    fetch('products.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(html => {
+            mainContent.innerHTML = html;
+            loadProducts();
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+  };
+
+
+// Script To Upload Products Dynamically
+function loadProducts() {
+    const container = document.getElementById("products-container");
+    // Fetch product data from a JSON file
+    fetch("assets/data/products.json")
+      .then(response => response.json())
+      .then(products => {
+        products.forEach(product => {
+          const productCard = `
+            <div class="col-lg-4 col-md-6">
+              <div class="product-card">
+                <img src="${product.image}" alt="${product.name}" class="img-fluid">
+                <div class="product-info p-3">
+                  <h3>${product.name}</h3>
+                  <p>${product.description}</p>
+                  <p class="product-price">${product.price}</p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          `;
+          container.innerHTML += productCard;
+        });
+      })
+      .catch(error => console.error("Error fetching products:", error));
+};
 
 (function() {
   "use strict";
