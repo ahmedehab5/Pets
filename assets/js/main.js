@@ -5,8 +5,24 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+var isCurrentPageLanding = true;
+
+// Function onNavElementClicked to handle the click event on the nav elements params: element id
+// where if the user clicks on the nav element and isCurrentPageLanding is true
+// scroll to the section with the id of the nav element
+// else load the page with the id of the nav element
+function onNavElementClicked(elementId) {
+  if (!isCurrentPageLanding) {
+    location.reload();
+  }
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
+  injectLandPage();
+});
+
+function injectLandPage() {
   const mainContent = document.getElementById('main-content');
   fetch('landing.html')
       .then(response => {
@@ -21,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => {
           console.error('There was a problem with the fetch operation:', error);
       });
-});
+}
 
 //On click Function To Load My Products
 function loadAllProducts() {
@@ -35,6 +51,7 @@ function loadAllProducts() {
         })
         .then(html => {
             mainContent.innerHTML = html;
+            isCurrentPageLanding = false;
             loadProducts();
         })
         .catch(error => {
