@@ -5,8 +5,24 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+var isCurrentPageLanding = true;
+
+// Function onNavElementClicked to handle the click event on the nav elements params: element id
+// where if the user clicks on the nav element and isCurrentPageLanding is true
+// scroll to the section with the id of the nav element
+// else load the page with the id of the nav element
+function onNavElementClicked(elementId) {
+  if (!isCurrentPageLanding) {
+    location.reload();
+  }
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
+  injectLandPage();
+});
+
+function injectLandPage() {
   const mainContent = document.getElementById('main-content');
   fetch('landing.html')
       .then(response => {
@@ -21,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => {
           console.error('There was a problem with the fetch operation:', error);
       });
-});
+}
 
 //On click Function To Load My Products
 function loadAllProducts() {
@@ -35,6 +51,7 @@ function loadAllProducts() {
         })
         .then(html => {
             mainContent.innerHTML = html;
+            isCurrentPageLanding = false;
             loadProducts();
         })
         .catch(error => {
@@ -45,30 +62,39 @@ function loadAllProducts() {
 
 // Script To Upload Products Dynamically
 function loadProducts() {
-    const container = document.getElementById("products-container");
-    // Fetch product data from a JSON file
-    fetch("assets/data/products.json")
-      .then(response => response.json())
-      .then(products => {
-        products.forEach(product => {
-          const productCard = `
-            <div class="col-lg-4 col-md-6">
-              <div class="product-card">
+  const container = document.getElementById("products-container");
+
+  // Fetch product data from a JSON file
+  fetch("assets/data/products.json")
+    .then(response => response.json())
+    .then(products => {
+      products.forEach(product => {
+        const productCard = `
+          <div class="col-lg-4 col-md-6">
+            <div class="product-card shadow-sm">
+              <div class="product-image position-relative">
                 <img src="${product.image}" alt="${product.name}" class="img-fluid">
-                <div class="product-info p-3">
-                  <h3>${product.name}</h3>
-                  <p>${product.description}</p>
-                  <p class="product-price">${product.price}</p>
-                  <a href="#" class="btn btn-primary">View Details</a>
-                </div>
+                <span class="price-badge position-absolute top-0 start-0 bg-danger text-white px-2 py-1">
+                  <s>${product.priceBeforeSale}</s>
+                </span>
+              </div>
+              <div class="product-info p-3 text-center">
+                <h3>${product.name}</h3>
+                <p class="product-description">${product.description}</p>
+                <p class="product-prices">
+                  <span class="price-after-sale text-success">${product.priceAfterSale}</span>
+                </p>
+                <!-- Always visible button -->
+                <a href="https://wa.me/+971525507027" class="btn btn-primary mt-3">View Details</a>
               </div>
             </div>
-          `;
-          container.innerHTML += productCard;
-        });
-      })
-      .catch(error => console.error("Error fetching products:", error));
-};
+          </div>
+        `;
+        container.innerHTML += productCard;
+      });
+    })
+    .catch(error => console.error("Error fetching products:", error));
+}
 
 (function() {
   "use strict";

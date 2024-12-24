@@ -64,62 +64,80 @@
 
 <!-- puppies Section -->
 
-    <!-- Products Section -->
-<section id="puppies" class="features section">
+<section id="puppies" class="puppies section">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header text-center mb-4">
+      <h2>Adorable Puppies</h2>
+      <p>Meet our lovely puppies looking for a forever home!</p>
+    </header>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 align-items-center justify-content-between">
-
-          <!-- Section Header -->
-          <div class="col-12 text-center">
-            <span class="section-meta">OUR PRODUCTS</span>
-            <h2 class="section-title">Discover Our Featured Products</h2>
-            <p class="section-description">Explore our handpicked selection of products that blend quality and innovation. Find the perfect fit for your needs.</p>
+    <div class="row gy-4">
+      <!-- Puppy 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="product-card shadow-sm">
+          <div class="product-image position-relative">
+            <img src="assets/img/shutterstock_1048123303-scaled.jpg" alt="Golden Retriever Puppy" class="img-fluid">
+            <span class="price-badge position-absolute top-0 start-0 bg-danger text-white px-2 py-1">
+              <s>$1150</s>
+            </span>
           </div>
-
-          <!-- Product Cards -->
-          <div class="row gy-4 mt-4">
-            <!-- Product 1 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="product-card">
-                <img src="assets/img/shutterstock_1048123303-scaled.jpg" alt="Product 1" class="img-fluid">
-                <h3 class="product-title">Product 1</h3>
-                <p class="product-description">A brief description of Product 1 highlighting its key features and benefits.</p>
-                <p class="product-price">$99.99</p>
-                <a href="#" class="btn btn-primary">View Details</a>
-              </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="product-card">
-                <img src="assets/img/shutterstock_1048123303-scaled.jpg" alt="Product 2" class="img-fluid">
-                <h3 class="product-title">Product 2</h3>
-                <p class="product-description">A brief description of Product 2 highlighting its key features and benefits.</p>
-                <p class="product-price">$129.99</p>
-                <a href="#" class="btn btn-primary">View Details</a>
-              </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="product-card">
-                <img src="assets/img/shutterstock_1048123303-scaled.jpg" alt="Product 3" class="img-fluid">
-                <h3 class="product-title">Product 3</h3>
-                <p class="product-description">A brief description of Product 3 highlighting its key features and benefits.</p>
-                <p class="product-price">$149.99</p>
-                <a href="#" class="btn btn-primary">View Details</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- View All Products Button -->
-          <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-delay="500">
-            <button class="btn btn-outline-primary" id="products" onclick="loadAllProducts()">View All Products</button>
+          <div class="product-info p-3 text-center">
+            <h3>Golden Retriever</h3>
+            <p class="product-description">A playful and friendly companion for your family.</p>
+            <p class="product-prices">
+              <span class="price-after-sale text-success">$1,200</span>
+            </p>
+            <a href="#" class="btn btn-primary mt-3">View Details</a>
           </div>
         </div>
       </div>
 
+      <!-- Puppy 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="product-card shadow-sm">
+          <div class="product-image position-relative">
+            <img src="assets/img/shutterstock_1048123303-scaled.jpg" alt="Beagle Puppy" class="img-fluid">
+            <span class="price-badge position-absolute top-0 start-0 bg-danger text-white px-2 py-1">
+              <s>$1150</s>
+            </span>
+          </div>
+          <div class="product-info p-3 text-center">
+            <h3>Beagle</h3>
+            <p class="product-description">An energetic and curious little friend to brighten your days.</p>
+            <p class="product-prices">
+              <span class="price-after-sale text-success">$950</span>
+            </p>
+            <a href="#" class="btn btn-primary mt-3">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Puppy 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="product-card shadow-sm">
+          <div class="product-image position-relative">
+            <img src="assets/img/shutterstock_1048123303-scaled.jpg" alt="French Bulldog Puppy" class="img-fluid">
+            <span class="price-badge position-absolute top-0 start-0 bg-danger text-white px-2 py-1">
+              <s>$1150</s>
+            </span>
+          </div>
+          <div class="product-info p-3 text-center">
+            <h3>French Bulldog</h3>
+            <p class="product-description">A charming and affectionate pup for your cozy moments.</p>
+            <p class="product-prices">
+              <span class="price-after-sale text-success">$1,500</span>
+            </p>
+            <a href="#" class="btn btn-primary mt-3">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- View All Products Button -->
+      <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-delay="500">
+        <button class="btn btn-outline-primary" id="products" onclick="loadAllProducts()">View All Products</button>
+      </div>
+    </div>
+  </div>
 </section>
 
 
