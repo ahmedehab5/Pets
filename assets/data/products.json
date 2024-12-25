@@ -3,9 +3,9 @@
       "id": "1",
       "name": "French bulldog",
       "description": "This is an amazing product.",
-      "image": "assets/img",
-      "priceBeforeSale": "$50.00",
-      "priceAfterSale": "$35.00"
+      "image": "assets/img/dogs/french-bulldog.jpg",
+      "priceBeforeSale": "$9000",
+      "priceAfterSale": "$8000"
     },
     {
       "id": "2",
