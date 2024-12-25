@@ -1,9 +1,9 @@
 [
     {
       "id": "1",
-      "name": "Product One",
+      "name": "French bulldog",
       "description": "This is an amazing product.",
-      "image": "assets/img/shutterstock_1048123303-scaled.jpg",
+      "image": "assets/img",
       "priceBeforeSale": "$50.00",
       "priceAfterSale": "$35.00"
     },
