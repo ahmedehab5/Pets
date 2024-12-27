@@ -76,17 +76,17 @@ function loadProducts() {
                 <img src="${product.image}" alt="${product.name}" class="img-fluid">
                 <span class="price-badge position-absolute top-0 start-0 bg-danger text-white px-2 py-1">
                   <s>${product.priceBeforeSale}</s>
+                  <S>AED</S>
                 </span>
               </div>
               <div class="product-info p-3 text-center">
                 <h3>${product.name}</h3>
-                <p class="product-description">${product.description}</p>
                 <p class="product-prices">
                   <span class="price-after-sale text-success">${product.priceAfterSale}</span>
+                  <span class="price-after-sale text-success">AED</span>
                 </p>
                 <!-- Always visible button -->
-                <a href="https://wa.me/+971525507027" class="btn btn-primary mt-3">Proceed to Buy
-                </a>
+                <a class="contact-button"  href="https://wa.me/+971525507027">Proceed To Buy</a>
               </div>
             </div>
           </div>
