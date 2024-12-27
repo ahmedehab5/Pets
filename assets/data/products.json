@@ -1,34 +1,244 @@
 [
-    {
-      "id": "1",
-      "name": "French bulldog",
-      "description": "This is an amazing product.",
-      "image": "assets/img/dogs/french-bulldog.jpg",
-      "priceBeforeSale": "$9000",
-      "priceAfterSale": "$8000"
-    },
-    {
-      "id": "2",
-      "name": "Product Two",
-      "description": "This product is even better.",
-      "image": "assets/img/shutterstock_1048123303-scaled.jpg",
-      "priceBeforeSale": "$80.00",
-      "priceAfterSale": "$60.00"
-    },
-    {
-        "id": "3",
-        "name": "Product Three",
-        "description": "This product is even better.",
-        "image": "assets/img/shutterstock_1048123303-scaled.jpg",
-        "priceBeforeSale": "$80.00",
-        "priceAfterSale": "$60.00"
-      },
-      {
-        "id": "4",
-        "name": "Product Four",
-        "description": "This product is even better.",
-        "image": "assets/img/shutterstock_1048123303-scaled.jpg",
-        "priceBeforeSale": "$80.00",
-        "priceAfterSale": "$60.00"
-      }
-  ]
+  {
+    "id": "1",
+    "name": "French Bulldog",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/french-bulldog.jpg",
+    "priceBeforeSale": "9000",
+    "priceAfterSale": "8000"
+  },
+  {
+    "id": "2",
+    "name": "American Cocker",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/american-cocker.jpg",
+    "priceBeforeSale": "8700",
+    "priceAfterSale": "7500"
+  },
+  {
+    "id": "3",
+    "name": "Shitzu",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/shitzu.webp",
+    "priceBeforeSale": "7000",
+    "priceAfterSale": "5500"
+  },
+  {
+    "id": "4",
+    "name": "Chow Chow",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/chow-chow.webp",
+    "priceBeforeSale": "7000",
+    "priceAfterSale": "6000"
+  },
+  {
+    "id": "5",
+    "name": "Husky",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/husky.jpg",
+    "priceBeforeSale": "5600",
+    "priceAfterSale": "4500"
+  },
+  {
+    "id": "6",
+    "name": "Pomeranian",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/pomeranian.webp",
+    "priceBeforeSale": "10000",
+    "priceAfterSale": "9000"
+  },
+  {
+    "id": "7",
+    "name": "Border Collie",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/border-collie.png",
+    "priceBeforeSale": "13000",
+    "priceAfterSale": "12000"
+  },
+  {
+    "id": "8",
+    "name": "Corgi",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/corgi.webp",
+    "priceBeforeSale": "8000",
+    "priceAfterSale": "7000"
+  },
+  {
+    "id": "9",
+    "name": "Duch Hound",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/duch-hound.jpeg",
+    "priceBeforeSale": "9000",
+    "priceAfterSale": "8000"
+  },
+  {
+    "id": "10",
+    "name": "Saint Bernard",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/saint-bernard.webp",
+    "priceBeforeSale": "10000",
+    "priceAfterSale": "8500"
+  },
+  {
+    "id": "11",
+    "name": "Beagle",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/beagle.jpeg",
+    "priceBeforeSale": "7500",
+    "priceAfterSale": "6500"
+  },
+  {
+    "id": "12",
+    "name": "Gaint Alaskan",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/gaint-alaskan.jpeg",
+    "priceBeforeSale": "10000",
+    "priceAfterSale": "9000"
+  },
+  {
+    "id": "13",
+    "name": "Havanese",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/havanese.jpeg",
+    "priceBeforeSale": "6000",
+    "priceAfterSale": "5000"
+  },
+  {
+    "id": "14",
+    "name": "Japanese Akita",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/japanese-akita.jpeg",
+    "priceBeforeSale": "10500",
+    "priceAfterSale": "9500"
+  },
+  {
+    "id": "15",
+    "name": "Samoyed",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/samoyed.jpeg",
+    "priceBeforeSale": "11000",
+    "priceAfterSale": "10000"
+  },
+  {
+    "id": "16",
+    "name": "Chihuahua",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/chihuahua.jpeg",
+    "priceBeforeSale": "7500",
+    "priceAfterSale": "6500"
+  },
+  {
+    "id": "17",
+    "name": "Rottweiler",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/rottweiler.webp",
+    "priceBeforeSale": "8500",
+    "priceAfterSale": "7500"
+  },
+  {
+    "id": "18",
+    "name": "Doberman",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/doberman.jpeg",
+    "priceBeforeSale": "8000",
+    "priceAfterSale": "7000"
+  },
+  {
+    "id": "19",
+    "name": "Poodle",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/poodle.jpg",
+    "priceBeforeSale": "11000",
+    "priceAfterSale": "10000"
+  },
+  {
+    "id": "20",
+    "name": "Maltipoo",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/maltipoo.jpeg",
+    "priceBeforeSale": "7500",
+    "priceAfterSale": "6500"
+  },
+  {
+    "id": "21",
+    "name": "King Charles",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/king-charles.jpeg",
+    "priceBeforeSale": "11000",
+    "priceAfterSale": "10000"
+  },
+  {
+    "id": "22",
+    "name": "German Shepherd",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/german-shepherd.jpeg",
+    "priceBeforeSale": "8000",
+    "priceAfterSale": "7000"
+  },
+  {
+    "id": "23",
+    "name": "Jack Russell",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/jack-russell.jpg",
+    "priceBeforeSale": "7500",
+    "priceAfterSale": "6500"
+  },
+  {
+    "id": "24",
+    "name": "English Bulldog",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/english-bulldog.jpeg",
+    "priceBeforeSale": "10500",
+    "priceAfterSale": "9500"
+  },
+  {
+    "id": "25",
+    "name": "Dalmatian",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/dalmatian.jpeg",
+    "priceBeforeSale": "8000",
+    "priceAfterSale": "7000"
+  },
+  {
+    "id": "26",
+    "name": "Maltese",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/maltese.jpg",
+    "priceBeforeSale": "6500",
+    "priceAfterSale": "5500"
+  },
+  {
+    "id": "27",
+    "name": "Cocker Spaniel",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/cocker-spaniel.webp",
+    "priceBeforeSale": "8000",
+    "priceAfterSale": "7000"
+  },
+  {
+    "id": "28",
+    "name": "Malinois",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/malinois.jpeg",
+    "priceBeforeSale": "8500",
+    "priceAfterSale": "7500"
+  },
+  {
+    "id": "29",
+    "name": "Bernese",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/bernese.jpeg",
+    "priceBeforeSale": "12000",
+    "priceAfterSale": "11000"
+  },
+  {
+    "id": "30",
+    "name": "Yorkie",
+    "description": "This is an amazing product.",
+    "image": "assets/img/dogs/yorkie.jpeg",
+    "priceBeforeSale": "8000",
+    "priceAfterSale": "7000"
+  }
+  
+    
+]

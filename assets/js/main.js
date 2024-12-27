@@ -85,7 +85,8 @@ function loadProducts() {
                   <span class="price-after-sale text-success">${product.priceAfterSale}</span>
                 </p>
                 <!-- Always visible button -->
-                <a href="https://wa.me/+971525507027" class="btn btn-primary mt-3">Proceed to Buy</a>
+                <a href="https://wa.me/+971525507027" class="btn btn-primary mt-3">Proceed to Buy
+                </a>
               </div>
             </div>
           </div>
