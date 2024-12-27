@@ -183,10 +183,10 @@
   },
   {
     "id": "27",
-    "name": "Cocker Spaniel",
-    "image": "assets/img/dogs/cocker-spaniel.webp",
-    "priceBeforeSale": "8000",
-    "priceAfterSale": "7000"
+    "name": "Golden Retriever",
+    "image": "assets/img/dogs/golden-retriever.jpg",
+    "priceBeforeSale": "7500",
+    "priceAfterSale": "6500"
   },
   {
     "id": "28",
