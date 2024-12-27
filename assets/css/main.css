@@ -2463,7 +2463,7 @@ section,
   border: none; /* Remove border */
   transition: all 0.3s ease-in-out; /* Smooth hover transition */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  min-width: 400px; /* Ensures a consistent minimum width */
+  min-width: 350px; /* Ensures a consistent minimum width */
   text-align: center; /* Centers text if width is larger */
 }
 
