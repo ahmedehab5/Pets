@@ -5,12 +5,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Puppies Hub</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Discover a wide range of dogs and puppies for sale, including affordable prices, detailed breed profiles, and helpful adoption tips. Find your perfect companion today!">
+  <meta name="keywords" content="puppieshub, puppieshub ae, dogs for sale, puppies for sale, dog breeds, affordable dogs, Labrador puppies, Golden Retriever for sale, adopt a dog, dog catalog">
+  <meta name="author" content="Puppies Hub">
+  <meta property="og:title" content="Puppies Hub">
+  <meta property="og:description" content="Discover a wide range of dogs and puppies for sale, including affordable prices, detailed breed profiles, and helpful adoption tips. Find your perfect companion today!">
+  <meta property="og:image" content="assets/img/dog.png">
+  <meta property="og:url" content="https://puppieshub.ae">
 
   <!-- Favicons -->
   <link href="assets/img/dog.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/dog.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -29,13 +34,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iLanding
-  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-  * Updated: Nov 12 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -44,9 +42,8 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Puppies Hub</h1>
+        <img src="assets/img/dog.png" alt="Puppies">
+        <h1 class="sitename">Hub</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -87,8 +84,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#hero" class="active" onclick="onNavElementClicked('hero')">Home</a></li>
+            <li><a href="index.html#puppies" onclick = "onNavElementClicked('puppies')">Puppies</a></li>
+            <li><a href="index.html#about" onclick="onNavElementClicked('about')">About</a></li>
+            <li><a href="index.html#contact" onclick="onNavElementClicked('contact')">Contact</a></li>
           </ul>
         </div>
       </div>
