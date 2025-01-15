@@ -86,7 +86,7 @@ function loadProducts() {
                   <span class="price-after-sale text-success">AED</span>
                 </p>
                 <!-- Always visible button -->
-                <a class="contact-button"  href="https://wa.me/+971525507027">Proceed To Buy</a>
+                <a class="contact-button"  href="https://wa.me/+971588663286">Proceed To Buy</a>
               </div>
             </div>
           </div>
