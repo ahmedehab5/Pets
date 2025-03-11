@@ -208,5 +208,12 @@
     "image": "assets/img/dogs/yorkie.jpeg",
     "priceBeforeSale": "8000",
     "priceAfterSale": "7000"
+  },
+  {
+    "id": "30",
+    "name": "Cocker Spaniel",
+    "image": "assets/img/dogs/cocker-spaniel.webp",
+    "priceBeforeSale": "8000",
+    "priceAfterSale": "7000"
   }
 ]
